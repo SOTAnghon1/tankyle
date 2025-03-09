@@ -1,0 +1,90 @@
+#About{
+    margin: 0;
+    padding: 53px;
+    background-color:  rgba(149, 87, 165, 0.541);
+    min-height: 479px;
+    padding-top: 154px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.aTitlecontainer{
+    margin-top: -55px;
+}
+
+#About .aTitle{
+  
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #ffffff;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+}
+
+.aboutphotocontainer div {
+  
+    display: inline-block;
+    
+}
+.aboutphotocontainer{
+    margin-left: 0;
+    background-color: #ffffffa2;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 30px 5px;
+    
+        
+}
+.photomargin{
+    margin-left: 30px;
+    margin-right: 30px;
+    transition: 0.3s;
+    padding: 40px 0;
+
+   
+}
+.aboutphotocontainer img{
+    height: 350px;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    width: 280px;
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 5px black;
+    background-color:#ffffff;
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth transition */
+   
+    
+}
+.aboutphotocontainer .overlay-text {
+ 
+    position: absolute;
+    top: 70%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 90%; /* Adjust width to fit inside the image */
+    background: rgba(0, 0, 0, 0.068); /* Optional: Adds contrast for readability */
+
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0; /* Hide text initially */
+    transition: opacity 0.1s ease-in-out;
+    pointer-events: none; /* Prevents text from blocking hover effects */
+    
+}
+.photomargin:hover{
+    transform: scale(1.01);
+    
+}
+.aboutphotocontainer img:hover{
+ 
+    filter: brightness(50%); /* Darkens the image */
+  
+   
+}
+.photomargin:hover .overlay-text {
+    opacity: 1; /* Shows the text */
+}

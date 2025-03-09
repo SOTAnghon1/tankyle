@@ -1,0 +1,179 @@
+*{
+    scroll-behavior: smooth ;
+}
+header{
+    backdrop-filter: blur(5px);
+    background-color:  #41225a6c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 80px;
+    box-shadow: 0 0 10px 5px;
+   
+    z-index: 500;
+    
+}
+
+.logo img{
+    object-fit: cover;
+    margin-top: 7px;
+    margin-left: 35px;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    
+  background-color: #86000000;
+    transition: .2s;
+   padding: 1px;
+   padding-left: 14px;
+   padding-right: 14px;
+  
+    
+}
+
+
+.logo img:hover{
+    box-shadow: 0 0 10px 1px #b58cc4;
+    transform: scale(1.05);
+}
+.navbartext{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+    
+}
+.navbar ul li a:hover{
+    color: #3e1943;
+    box-shadow: 1px 4px 10px 1px #313131;
+    background-color: #ffffff;
+    border-radius: 9px;
+    transform: scale();
+    
+    
+}
+.navbar ul li a{
+    font-size: large;
+    font-weight: bolder;
+    text-decoration: none;
+    color:#ffffff;
+    padding: 5px;
+    transition: .4s;
+}
+
+/* body */
+#taas{
+    min-height: 500px;
+}
+body {
+    margin: 0;
+   padding-top: 70px;  /* tinatago ni header si body kaya this */
+   background-color: #3e1943;
+   
+}
+section .About{
+    width: 100%;
+    height: 100vh;
+    
+}
+.picture2 img{
+    width: 350px;
+    height: 350px;
+    margin-left: 25%;
+    border-radius: 360px;
+    box-shadow: 0px 0px 30px 25px #33183c;
+    margin-top: 15px;
+    object-fit: cover;
+    padding: 10px;
+    background-color: #130421;
+}
+.aboutcontent{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    margin-top: 7%;
+}
+.Abouttext{
+    margin-left: -100px;
+    margin-top: -20px;
+  
+}
+.aboutcontent .Abouttext h1{
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-shadow: 4px 4px 20px #130421;
+    border-right: 5px solid;
+    padding-right: -50px;
+    animation: typing 1s steps(1000, end) forwards, blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to { width: 100%;} 
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+.aboutcontent .Abouttext p{
+    font-size: 20px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 6px 6px 15px #130421;
+    margin-bottom: 30px;
+    
+    
+}
+.Abouttext button{
+    padding: 12px 24px;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: white;
+    background-color: #130421;
+    border-style: none;
+    border-radius: 15px;
+    text-align: center;
+  
+    transition: .4s;
+    box-shadow: 0 0 10px 7px #3b1a47
+}
+
+.Abouttext button:hover{
+    transform: scale(1.1);
+    background-color: white;
+    color: #3e1943;
+    
+    transform: translateY(-5px);
+    
+    
+    
+}
+footer{
+    background-color: #41225a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    
+}
+

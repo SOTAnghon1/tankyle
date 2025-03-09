@@ -1,0 +1,77 @@
+
+#Skills{
+    margin: 0;
+    padding: 53px;
+    background-color: rgb(132, 79, 143);
+    margin-bottom: 20px;
+  
+    min-height: 479px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sktextcontainer{
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: -10px;
+    text-align: center;
+   
+}
+.skimagecontainer{
+    width: 80%;
+    height: 420px;
+    background-color: #0f0d0f67;
+    margin-top: -20px;
+    margin-left: 10%;
+    padding-top: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 30px 5px;
+    
+ 
+    
+}
+
+.skimagecontainer img{
+    aspect-ratio: 1/1;
+    width: 300px;
+    height: 300px;
+    padding: 4px;
+    margin: 5px 10px;
+    margin-top: 10px;
+    border-radius: 40px;
+    object-fit: cover;
+    box-shadow: 0 0 10px 5px black;
+   
+    
+    display: block; /* Removes extra spacing below images */
+}
+.skimagecontainer div {
+    position: relative; /* Makes the div a reference for absolute positioning */
+    display: inline-block; /* Ensures divs align correctly */
+   transition: .4s;
+}
+.overlay {
+    position: absolute; /* Takes the text out of normal flow */
+    top: 105%; /* Moves it to the middle */
+    left: 50%; /* Moves it to the middle */
+    transform: translate(-50%, -50%); /* Perfect centering */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(77, 86, 128, 0.699); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 15px;
+    width: 80%; /* Adjust width */
+    opacity: 0; /* Initially hidden */
+    box-shadow: 0 0 10px 5px;
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+   
+}
+.skimagecontainer div:hover .overlay {
+    opacity: 1; /* Make text visible */
+}
+.skimagecontainer div:hover{
+    transform: translateY(12px);
+}
